@@ -1,0 +1,17 @@
+@import "partials/reset";
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+*{
+  box-sizing: border-box;
+  font-family: 'open_sansregular', sans-serif;
+}
+@import "partials/_Section1";
