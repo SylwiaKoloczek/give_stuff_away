@@ -1,1 +1,1 @@
-# give_stuff_away
+An app allowing you to donate clothes.
