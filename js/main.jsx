@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-@import 'scss/partials/_Section1.scss'; // assuming a styles directory under src/
+import 'scss/partials/main.scss';
+//import 'scss/partials/_Section1.scss'; // assuming a styles directory under src/
 //@import '~nprogress/nprogress'; // importing a css file from the nprogress node module
 
 
