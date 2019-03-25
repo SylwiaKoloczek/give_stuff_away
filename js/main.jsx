@@ -1,18 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./../scss/main.scss";
-//import 'scss/partials/_Section1.scss'; // assuming a styles directory under src/
-//@import '~nprogress/nprogress'; // importing a css file from the nprogress node module
 
 
 document.addEventListener('DOMContentLoaded', function(){
 
-    class Log_Register extends React.Component {
+    class Slogan_Options extends React.Component {
         render() {
-            let className='a';
             return (
-                <div>
-                <h1 className={className}>elo</h1>
+                <div className={'slogan_options_display_style'}>
+                      <div className={'slogan'}>
+                          <h3>Zacznij pomagać!</h3>
+                          <h3>Oddaj niechciane rzeczy w zaufane ręce</h3>
+                          <img src={'images/decoration.png'}></img>
+                      </div>
+                    <div className={'options'}>
+                        <button>ODDAJ RZECZY</button>
+                        <button>ZORGANIZUJ ZBIÓRKĘ</button>
+                    </div>
+                </div>
+            )
+        }
+    }
+
+    class Menu extends React.Component {
+        render() {
+            return (
+                <div className={'menu_display_style'}>
+                    <div className={'log_reg'}>
+                        <button>Zaloguj</button>
+                        <button>Załóż konto</button>
+                    </div>
+                    <div>
+                        <ul className={'menu'}>
+                            <li>Start</li>
+                            <li>O co chodzi?</li>
+                            <li>O nas</li>
+                            <li>Fundacje i organizacje</li>
+                            <li>Kontakt</li>
+                        </ul>
+                    </div>
                 </div>
             )
         }
@@ -21,11 +48,9 @@ document.addEventListener('DOMContentLoaded', function(){
     class Section1 extends React.Component {
         render() {
             return (
-                <div>
-                    <Log_Register/>
-                    {/*<Menu/>,*/}
-                    {/*<Slogan/>,*/}
-                    {/*<Options />*/}
+                <div className={'main_config'}>
+                    <Menu/>
+                    <Slogan_Options/>
                 </div>
             )
         }
