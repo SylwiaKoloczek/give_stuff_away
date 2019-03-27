@@ -1,64 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22461c3e-50ca-434e-9a50-76bbf67b7871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scss/partials/_Section2.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/partials/_Section3.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/partials/_Section4.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/partials/_Section6.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/generator_config.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-bold-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-bold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-bolditalic-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-bolditalic-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-bolditalic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-extrabold-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-extrabold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-extrabold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-extrabolditalic-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-extrabolditalic-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-extrabolditalic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-italic-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-italic-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-italic-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-italic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-light-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-light-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-lightitalic-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-lightitalic-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-lightitalic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-regular-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-regular-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-semibold-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-semibold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-semibold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-semibolditalic-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-semibolditalic-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-semibolditalic-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/opensans-semibolditalic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/out.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/out.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_Section1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_Section1.scss" afterDir="false" />
-    </list>
+    <list default="true" id="22461c3e-50ca-434e-9a50-76bbf67b7871" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/js/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,20 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/main.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -194,16 +124,15 @@
       <workItem from="1553506308717" duration="6981000" />
       <workItem from="1553543548279" duration="102000" />
       <workItem from="1553617153931" duration="1093000" />
-      <workItem from="1553684450520" duration="18637000" />
+      <workItem from="1553684450520" duration="19857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31377000" />
+    <option name="totallyTimeSpent" value="32597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="235" y="23" width="963" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24946922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -333,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        <state relative-caret-position="444">
+          <caret line="270" column="22" lean-forward="true" selection-start-line="270" selection-start-column="22" selection-end-line="270" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

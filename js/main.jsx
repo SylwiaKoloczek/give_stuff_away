@@ -243,12 +243,21 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     class Menu extends React.Component {
+
+        log_click = () => {
+            console.log("Logged in");
+        }
+
+        reg_click = () => {
+            console.log("Registered");
+        }
+
         render() {
             return (
                 <div className={'menu_display_style'}>
                     <div className={'log_reg position'}>
-                        <button>Zaloguj</button>
-                        <button>Załóż konto</button>
+                        <button onClick={this.log_click}>Zaloguj</button>
+                        <button onClick={this.reg_click}>Załóż konto</button>
                     </div>
                     <div>
                         <ul className={'menu position'}>
