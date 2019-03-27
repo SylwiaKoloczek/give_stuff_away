@@ -1,0 +1,122 @@
+.main_config_s6{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url("./../images/footer_bg_img.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color:  #ECF0EF;
+
+  .s6_form{
+    width: 35%;
+    height: 80%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    .s6_header{
+      width: 100%;
+      height: 20%;
+      text-align: center;
+      h1{
+        font-size: 1.5em;
+        font-weight: 100;
+      }
+      img{
+        max-width: 40%;
+        margin: 1em;
+
+      }
+    }
+
+    .form_part{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 35%;
+
+      .s6_form_info{
+        h2{
+          font-size: .8em;
+          font-weight: 100;
+          margin-bottom: 1.5em;
+        }
+        .s6_input_info{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid dimgrey;
+            width: 40%;
+          }
+          input::placeholder{
+            padding-left: 1.5em;
+          }
+          input:focus{
+            outline: none;
+          }
+          textarea{
+            width: 90%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid dimgrey;
+            resize: none;
+            padding-top: 3em;
+          }
+          textarea::placeholder{
+            padding-left: 1.5em;
+          }
+          textarea:focus{
+            outline: none;
+          }
+        }
+      }
+      .s6_button{
+        height: 20%;
+        width: 30%;
+        align-self: center;
+        margin-top: 2em;
+        button{
+          height: 100%;
+          width: 100%;
+          background-color: transparent;
+          border: 1px solid dimgrey;
+          cursor: pointer;
+        }
+        button:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+  .social_media{
+    width: 35%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    div{
+      border: 1px solid dimgrey;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 2em;
+      height: 2em;
+    }
+    .fb{
+      bottom: 1em;
+      right: 1em;
+    }
+    .ig{
+      bottom: 1em;
+      right: 4em;
+    }
+  }
+}

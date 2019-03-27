@@ -1,0 +1,64 @@
+.main_config_s3{
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  .s3_header{
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    h1{
+      font-size: 1.5em;
+      font-weight: 100;
+    }
+    img{
+      max-width: 15vw;
+    }
+  }
+
+  .s3_steps{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 50%;
+    background-color: lightgray;
+    .step{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 15%;
+      i{
+        margin-top: .5em;
+        margin-bottom: .5em;
+      }
+      h3{
+        font-weight: 100;
+        text-align: center;
+      }
+      p{
+        font-size: .8em;
+        text-align: center;
+      }
+    }
+  }
+
+  .s3_button{
+    height: 15%;
+    margin-bottom: 2em;
+    button{
+      height: 100%;
+      font-size: 1.5em;
+      padding: 1em;
+      background-color: transparent;
+      border: 1px solid grey;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.main_config_s4{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+
+  .about{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5em;
+    h1{
+      font-size: 2em;
+      text-align: center;
+      font-weight: 100;
+    }
+    img{
+      max-width: 40%;
+      margin: 1.5em;
+    }
+    p{
+      text-align: center;
+      line-height: 1.5em;
+    }
+  }
+
+  .s4_picture{
+    height: 100%;
+    width: 60%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,18 +1,14 @@
 @import "partials/reset";
 
-@font-face {
-  font-family: 'open_sansregular';
-  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-  url('../fonts/opensans-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
 *{
   box-sizing: border-box;
-  font-family: 'open_sansregular', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1200px;
+  color: dimgrey;
 }
+
 @import "partials/_Section1";
+@import "partials/_Section2";
+@import "partials/_Section3";
+@import "partials/_Section4";
+@import "partials/_Section6";
