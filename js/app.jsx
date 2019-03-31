@@ -11,13 +11,13 @@ import {Section6, Form, S6_Header, S6_Form_Part, S6_Form_Info, S6_Button, Social
 class App extends React.Component {
     render() {
         return (<div>
-                <Section1/>
-                <Section2/>
-                <Section3/>
-                <Section4/>
-                <Section5/>
-                <Section6/>
-            </div>
+                    <Section1/>
+                    <Section2/>
+                    <Section3/>
+                    <Section4/>
+                    <Section5/>
+                    <Section6/>
+                </div>
         )
     }
 }

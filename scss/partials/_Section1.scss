@@ -83,6 +83,9 @@
         width: 45%;
         cursor: pointer;
       }
+      button:focus{
+        outline: none;
+      }
   }
 }
 
