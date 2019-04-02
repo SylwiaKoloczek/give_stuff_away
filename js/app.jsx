@@ -10,7 +10,7 @@ import {Section6, Form, S6_Header, S6_Form_Part, S6_Form_Info, S6_Button, Social
 
 class App extends React.Component {
     render() {
-        return (<div>
+        return (<div className={'row'}>
                     <Section1/>
                     <Section2/>
                     <Section3/>
