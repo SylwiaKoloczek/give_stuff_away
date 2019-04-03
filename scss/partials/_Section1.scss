@@ -4,9 +4,10 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  //background-image: url("./../images/header_start_img.jpg");
+  background-image: url("./../images/header_start_img.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  //display: none;
 
   .menu_display_style{
     position: absolute;

@@ -171,9 +171,9 @@ export class Section1 extends React.Component {
         });
     }
     render() {
-        if(this.sloganVisible === "yes")
+        if(this.state.sloganVisible === "yes")
         {
-            console.log(this.sloganVisible);
+            console.log(this.state.sloganVisible);
             return(
                 <div className={'main_config_s1'}>
                     <Menu clickMethodDD={this.handleClickBox} />
@@ -181,19 +181,19 @@ export class Section1 extends React.Component {
                 </div>
             )
         }
-        else if(this.sloganVisible === "log"){
-            console.log(this.sloganVisible);
+        else if(this.state.sloganVisible === "log"){
+            console.log(this.state.sloganVisible);
             return(
-                <div className={'main_config_s1'}>
+                <div className={'main_config_s1'} style={{backgroundImage:"none"}}>
                     <Menu clickMethodDD={this.handleClickBox} />
                     <Log_Panel/>
                 </div>
             )
         }
         else{
-            console.log(this.sloganVisible);
+            console.log(this.state.sloganVisible);
             return(
-                <div className={'main_config_s1'}>
+                <div className={'main_config_s1'} style={{backgroundImage:"none"}}>
                     <Menu clickMethodDD={this.handleClickBox} />
                     <Reg_Panel/>
                 </div>
@@ -202,8 +202,6 @@ export class Section1 extends React.Component {
     }
 }
 
-//dlaczego sloganVisible jest ciągle undefined?
-//jak zmienić w this.state backgroundImage na none?
 
 //zamiast osobnych elementów w REG PANEL i LOG PANEL zrobić wspólne (za pomocą list?)
 //i w zależności od klikniętego przycisku w MENU wyświetlać odpowiedni element z listy
