@@ -22,10 +22,61 @@ export class Slogan_Options extends React.Component {
     }
 }
 
+
+export class Log_Header extends React.Component {
+    render() {
+        return (
+            <div className={'log_header'}>
+                <h1>Zaloguj się</h1>
+                <img src={'images/decoration.png'}></img>
+            </div>
+        )
+    }
+}
+
+export class Log_Form extends React.Component {
+    render() {
+        return (
+            <div className={'log_form'}>
+                <input type={'email'} placeholder={"Email"}/>
+                <input type={'password'} placeholder={"Hasło"}/>
+                <p>Przypomnij hasło</p>
+            </div>
+        )
+    }
+}
+
+export class Log_Buttons extends React.Component {
+    render() {
+        return (
+            <div className={'log_buttons'}>
+                <button>Zaloguj</button>
+                <button>Załóż konto</button>
+            </div>
+        )
+    }
+}
+
+//sprawdzić jakie imię jest wpisywane w Form w input, i wyświetlać je w zalogowanym panelu
+//po naciśnięciu przysisku zaloguj
+export class Log_Panel extends React.Component {
+    render() {
+        return (
+            <div className={'log_panel_display_style'}>
+                <Log_Header/>
+                <Log_Form/>
+                <Log_Buttons/>
+            </div>
+        )
+    }
+}
+
 export class Menu extends React.Component {
 
     log_click = () => {
-        console.log("Logged in");
+        if ( typeof this.props.clickMethodDD === 'function' ) {
+            this.props.clickMethodDD("no");
+        }
     }
 
     reg_click = () => {
@@ -54,12 +105,39 @@ export class Menu extends React.Component {
 }
 
 export class Section1 extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            sloganVisible: "yes",
+        }
+    }
+    handleClickBox = (paramFromChild) => {
+        this.setState({
+            sloganVisible: paramFromChild
+        });
+    }
     render() {
-        return (
-            <div className={'main_config_s1'}>
-                <Menu/>
-                <Slogan_Options/>
-            </div>
-        )
+        if(this.sloganVisible === "yes")
+        {
+            console.log(this.sloganVisible);
+            return(
+                <div className={'main_config_s1'}>
+                    <Menu clickMethodDD={this.handleClickBox} />
+                    <Slogan_Options/>
+                </div>
+            )
+        }
+        else{
+            console.log(this.sloganVisible);
+            return(
+                <div className={'main_config_s1'}>
+                    <Menu clickMethodDD={this.handleClickBox} />
+                    <Log_Panel/>
+                </div>
+            )
+        }
     }
 }
+
+//dlaczego sloganVisible jest ciągle undefined?
+//jak zmienić w this.state backgroundImage na none?
