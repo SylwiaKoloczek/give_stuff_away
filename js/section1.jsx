@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./../scss/main.scss";
 
+
+//MAIN PANEL
 export class Slogan_Options extends React.Component {
     render() {
         return (
@@ -22,7 +24,54 @@ export class Slogan_Options extends React.Component {
     }
 }
 
+//REG PANEL
+export class Reg_Header extends React.Component {
+    render() {
+        return (
+            <div className={'log_header'}>
+                <h1>Załóż konto</h1>
+                <img src={'images/decoration.png'}></img>
+            </div>
+        )
+    }
+}
 
+export class Reg_Form extends React.Component {
+    render() {
+        return (
+            <div className={'log_form'}>
+                <input type={'email'} placeholder={"Email"}/>
+                <input type={'password'} placeholder={"Hasło"}/>
+                <input type={'password'} placeholder={"Powtórz hasło"}/>
+            </div>
+        )
+    }
+}
+
+export class Reg_Buttons extends React.Component {
+    render() {
+        return (
+            <div className={'log_buttons'}>
+                <button>Załóż konto</button>
+                <button>Zaloguj</button>
+            </div>
+        )
+    }
+}
+
+export class Reg_Panel extends React.Component {
+    render() {
+        return (
+            <div className={'log_reg_panel_display_style'}>
+                <Reg_Header/>
+                <Reg_Form/>
+                <Reg_Buttons/>
+            </div>
+        )
+    }
+}
+
+//LOG PANEL
 export class Log_Header extends React.Component {
     render() {
         return (
@@ -62,7 +111,7 @@ export class Log_Buttons extends React.Component {
 export class Log_Panel extends React.Component {
     render() {
         return (
-            <div className={'log_panel_display_style'}>
+            <div className={'log_reg_panel_display_style'}>
                 <Log_Header/>
                 <Log_Form/>
                 <Log_Buttons/>
@@ -71,16 +120,19 @@ export class Log_Panel extends React.Component {
     }
 }
 
+//NIEZMIENNE MENU
 export class Menu extends React.Component {
 
     log_click = () => {
         if ( typeof this.props.clickMethodDD === 'function' ) {
-            this.props.clickMethodDD("no");
+            this.props.clickMethodDD("log");
         }
     }
 
     reg_click = () => {
-        console.log("Registered");
+        if ( typeof this.props.clickMethodDD === 'function' ) {
+            this.props.clickMethodDD("reg");
+        }
     }
 
     render() {
@@ -104,6 +156,8 @@ export class Menu extends React.Component {
     }
 }
 
+
+//GŁÓWNY PODZIAŁ
 export class Section1 extends React.Component {
     constructor(props) {
         super(props);
@@ -127,7 +181,7 @@ export class Section1 extends React.Component {
                 </div>
             )
         }
-        else{
+        else if(this.sloganVisible === "log"){
             console.log(this.sloganVisible);
             return(
                 <div className={'main_config_s1'}>
@@ -136,8 +190,20 @@ export class Section1 extends React.Component {
                 </div>
             )
         }
+        else{
+            console.log(this.sloganVisible);
+            return(
+                <div className={'main_config_s1'}>
+                    <Menu clickMethodDD={this.handleClickBox} />
+                    <Reg_Panel/>
+                </div>
+            )
+        }
     }
 }
 
 //dlaczego sloganVisible jest ciągle undefined?
 //jak zmienić w this.state backgroundImage na none?
+
+//zamiast osobnych elementów w REG PANEL i LOG PANEL zrobić wspólne (za pomocą list?)
+//i w zależności od klikniętego przycisku w MENU wyświetlać odpowiedni element z listy
