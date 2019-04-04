@@ -1,5 +1,4 @@
 .main_config_s5{
-  border: 1px solid black;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -7,7 +6,6 @@
   align-items: center;
 
   .s5_header{
-    border: 1px solid red;
     height: 30%;
     width: 40%;
     display: flex;
@@ -51,7 +49,6 @@
   }
 
   .s5_description{
-    border: 1px solid black;
     height: 20%;
     width: 40%;
     text-align: center;

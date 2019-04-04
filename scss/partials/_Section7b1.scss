@@ -1,0 +1,16 @@
+.s7b1_display_style{
+  width: 100vw;
+  height: 20vh;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1{
+    font-size: 1.5em;
+  }
+  p, h1{
+    margin-left: 100px;
+    color: black;
+    line-height: 1.5em;
+  }
+}

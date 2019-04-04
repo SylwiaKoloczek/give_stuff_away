@@ -1,10 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./../scss/main.scss";
+import {Section7a} from './section7a.jsx'
+import {Section7b} from './section7b.jsx'
+
 
 
 //MAIN PANEL
 export class Slogan_Options extends React.Component {
+
+    give_away_btn = () => {
+        if ( typeof this.props.clickMethodDD === 'function' ) {
+            this.props.clickMethodDD("give_away");
+        }
+    }
+
     render() {
         return (
             <div className={'slogan_options_display_style'}>
@@ -16,7 +26,7 @@ export class Slogan_Options extends React.Component {
                     <img src={'images/decoration.png'}></img>
                 </div>
                 <div className={'options'}>
-                    <button>ODDAJ <br/> RZECZY</button>
+                    <button onClick={this.give_away_btn}>ODDAJ <br/> RZECZY</button>
                     <button>ZORGANIZUJ <br/> ZBIÓRKĘ</button>
                 </div>
             </div>
@@ -96,11 +106,19 @@ export class Log_Form extends React.Component {
 }
 
 export class Log_Buttons extends React.Component {
+    logged_in_click = () => {
+       console.log('zalogowany');
+    }
+
+    registered_click = () => {
+        console.log('pokaz reg panel');
+    }
+
     render() {
         return (
             <div className={'log_buttons'}>
-                <button>Zaloguj</button>
-                <button>Załóż konto</button>
+                <button onClick={this.logged_in_click}>Zaloguj</button>
+                <button onClick={this.registered_click}>Załóż konto</button>
             </div>
         )
     }
@@ -121,6 +139,30 @@ export class Log_Panel extends React.Component {
 }
 
 //NIEZMIENNE MENU
+export class Menu_Nav_Panel extends React.Component{
+
+    start_click= () => {
+        if ( typeof this.props.clickMethodDD === 'function' ) {
+            this.props.clickMethodDD("yes");
+        }
+    }
+
+    render() {
+        return(
+            <div>
+                <ul className={'menu position'}>
+                    <li onClick={this.start_click}>Start</li>
+                    <li>O co chodzi?</li>
+                    <li>O nas</li>
+                    <li>Fundacje i organizacje</li>
+                    <li>Kontakt</li>
+                </ul>
+            </div>
+        )
+    }
+
+}
+
 export class Menu extends React.Component {
 
     log_click = () => {
@@ -135,6 +177,8 @@ export class Menu extends React.Component {
         }
     }
 
+
+
     render() {
         return (
             <div className={'menu_display_style'}>
@@ -142,15 +186,7 @@ export class Menu extends React.Component {
                     <button onClick={this.log_click}>Zaloguj</button>
                     <button onClick={this.reg_click}>Załóż konto</button>
                 </div>
-                <div>
-                    <ul className={'menu position'}>
-                        <li>Start</li>
-                        <li>O co chodzi?</li>
-                        <li>O nas</li>
-                        <li>Fundacje i organizacje</li>
-                        <li>Kontakt</li>
-                    </ul>
-                </div>
+                <Menu_Nav_Panel/>
             </div>
         )
     }
@@ -173,16 +209,14 @@ export class Section1 extends React.Component {
     render() {
         if(this.state.sloganVisible === "yes")
         {
-            console.log(this.state.sloganVisible);
             return(
                 <div className={'main_config_s1'}>
                     <Menu clickMethodDD={this.handleClickBox} />
-                    <Slogan_Options/>
+                    <Slogan_Options clickMethodDD={this.handleClickBox}/>
                 </div>
             )
         }
         else if(this.state.sloganVisible === "log"){
-            console.log(this.state.sloganVisible);
             return(
                 <div className={'main_config_s1'} style={{backgroundImage:"none"}}>
                     <Menu clickMethodDD={this.handleClickBox} />
@@ -190,12 +224,22 @@ export class Section1 extends React.Component {
                 </div>
             )
         }
-        else{
-            console.log(this.state.sloganVisible);
+        else if(this.state.sloganVisible === "reg"){
             return(
                 <div className={'main_config_s1'} style={{backgroundImage:"none"}}>
                     <Menu clickMethodDD={this.handleClickBox} />
                     <Reg_Panel/>
+                </div>
+            )
+        }
+        else if(this.state.sloganVisible === "give_away"){
+            return(
+                <div>
+                    <div className={'main_config_s1'} style={{backgroundImage:'url("images/header_logged_img.jpg")'}}>
+                        <Menu clickMethodDD={this.handleClickBox} />
+                        <Section7a/>
+                    </div>
+                    <Section7b/>
                 </div>
             )
         }
