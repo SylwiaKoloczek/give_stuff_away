@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./../scss/main.scss";
-import {Section7a} from './section7a.jsx'
-import {Section7b} from './section7b.jsx'
+import "./../../scss/main.scss";
+import {Section7a} from './../section7a.jsx'
+import {Section7b} from './../section7b.jsx'
 
 
 
