@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./../scss/main.scss";
-import {Section1, Menu, Slogan_Options} from './section1.jsx'
+import {Section1, Menu, Slogan_Options} from './section1/section1.jsx'
 import Section2 from './section2.jsx'
 import {Section3, S3_Header, S3_Steps, S3_Button} from './section3.jsx'
 import {Section4, S4_About, S4_Picture} from './section4.jsx'
