@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./../scss/main.scss";
+import "./../../scss/main.scss";
 
 const info=['Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć, komu najlepiej je przekazać.',
     'Wszystkie rzeczy do oddania zapakuj w 60l worki. Dokładną instrukcję, jak dokładnie spakować rzeczy znajdziesz TUTAJ.',

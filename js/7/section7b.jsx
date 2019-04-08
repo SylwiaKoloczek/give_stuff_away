@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./../scss/main.scss";
+import "./../../scss/main.scss";
 import {Section7b1} from './section7b1.jsx'
 import {Section7b2} from './section7b2.jsx'
 

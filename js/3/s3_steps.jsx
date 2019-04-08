@@ -1,16 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./../scss/main.scss";
-
-export class S3_Button extends React.Component {
-    render() {
-        return (
-            <div className={'s3_button'}>
-                <button>ZAŁÓŻ KONTO</button>
-            </div>
-        )
-    }
-}
+import "./../../scss/main.scss";
 
 //zrobić step jako jeden element
 export class S3_Steps extends React.Component {
@@ -41,28 +31,6 @@ export class S3_Steps extends React.Component {
                     <hr></hr>
                     <p>kurier przyjedzie w dogodnym terminie</p>
                 </div>
-            </div>
-        )
-    }
-}
-
-export class S3_Header extends React.Component {
-    render() {
-        return (
-            <div className={'s3_header'}>
-                <h1>Wystarczą 4 proste kroki</h1>
-                <img src={'images/decoration.png'}></img>
-            </div>
-        )
-    }
-}
-export class Section3 extends React.Component {
-    render() {
-        return (
-            <div className={'main_config_s3'}>
-                <S3_Header/>
-                <S3_Steps/>
-                <S3_Button/>
             </div>
         )
     }

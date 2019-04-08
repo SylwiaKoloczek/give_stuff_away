@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./../scss/main.scss";
+import "./../../scss/main.scss";
 
 //zrobić statistics_col jako jeden element
 class Section2 extends React.Component {
